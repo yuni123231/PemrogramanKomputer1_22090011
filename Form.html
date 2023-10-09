@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tips Kesehatan Tubuh</title>
+        <style>
+        body {
+            /* Gradien horizontal dari kiri (biru) ke kanan (hijau) */
+            background: linear-gradient(to right, #0072b5, #3ea055);
+            /* Mengatur latar belakang agar mengisi seluruh halaman */
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .content {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: white;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Form Pemantauan Kesehatan Pribadi</h2>
+        <div class="content">
+        
+        <form action="Tabel.html">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="umur">Umur:</label><br>
+            <input type="number" id="umur" name="umur" required><br><br>
+    
+            <label for="jeniskelamin">Jenis Kelamin:</label><br>
+            <select id="jeniskelamin" name="jeniskelamin">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select><br><br>
+
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+
+            <label for="tanggal">Tanggal</label><br>
+            <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+            <label for="tips">Silakan tandai kotak di sebelah setiap tips yang telah Anda terapkan dalam sepekan terakhir:</label><br>
+            <input type="checkbox" id="tips1" name="tips[]" value="Olahraga">
+            <label for="tips1">Rutin berolahraga minimal 30 menit setiap hari</label><br>
+            <input type="checkbox" id="tips2" name="tips[]" value="Nutrisi">
+            <label for="tips2">Konsumsi makanan seimbang yang kaya akan sayuran dan buah-buahan</label><br>
+            <input type="checkbox" id="tips3" name="tips[]" value="Air">
+            <label for="tips3">Minum air putih setidaknya 8 gelas sehari</label><br>
+            <input type="checkbox" id="tips4" name="tips[]" value="Kebiasaan Buruk">
+            <label for="tips4">Hindari merokok dan konsumsi alkohol berlebihan</label><br>
+            <input type="checkbox" id="tips5" name="tips[]" value="Istirahat">
+            <label for="tips5">Cukup tidur minimal 7-8 jam per malam</label><br>
+            <input type="checkbox" id="tips6" name="tips[]" value="Pencegahan Penyakit">
+            <label for="tips6">Lakukan pemeriksaan kesehatan rutin</label><br>
+            <input type="checkbox" id="tips7" name="tips[]" value="Kelola Stres">
+            <label for="tips7">Atur stres dengan teknik relaksasi seperti meditasi atau yoga</label><br>
+            <input type="checkbox" id="tips8" name="tips[]" value="Kebersihan">
+            <label for="tips8">Jaga kebersihan tangan untuk mencegah penyebaran penyakit</label><br>
+            <input type="checkbox" id="tips9" name="tips[]" value="Keselamatan">
+            <label for="tips9">Gunakan perlengkapan keselamatan saat berkendara, seperti helm dan sabuk pengaman</label><br>
+            <input type="checkbox" id="tips10" name="tips[]" value="Makanan">
+            <label for="tips10">Hindari terlalu banyak mengonsumsi makanan olahan dan fast food</label><br><br>
+
+            <label for="catatan">Tuliskan catatan singkat tentang perasaan kesehatan Anda dan kemajuan Anda dalam menerapkan tips-tips ini:</label><br>
+            <textarea id="catatan" name="catatan" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p>Terima kasih telah mengisi formulir ini. Hal ini akan membantu Anda dalam melacak kemajuan Anda menuju hidup yang lebih sehat.</p>
+        </div>
+    </body>
+</html>
